@@ -1,0 +1,12 @@
+env = Environment()
+#print env["CCFLAGS"]
+conf = Configure(env)
+#if not conf.CheckProg('sdl-config'):
+#    print 'SDL must be installed!'
+#    Exit(1)
+#if conf.CheckCHeader('foo.h'):
+#    conf.env.Append('-DHAS_FOO_H')
+env = conf.Finish()
+
+env.ParseConfig("sdl-config --libs --cflags")
+env.Program(['main.cpp', 'add.cpp'])

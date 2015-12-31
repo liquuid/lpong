@@ -1,0 +1,8 @@
+Pra compilar vc precisa da biblioteca libSDL 1.2.x e seus pacotes de desenvolvimento:
+
+debian: libsdl1.2-dev
+rh/fedora/e amigos: libsdl-devel
+slack/gentoo/komain: Instala o libsdl e seja feliz :)
+
+Não dá pra instalar ainda, pra compilar use "make",
+as imagens bmp devem estar no mesmo diretório que o executável.
